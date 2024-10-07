@@ -1,0 +1,41 @@
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px;
+  min-width: 80px;
+  height: 80px;
+  font-size: 18px;
+  border: none;
+  background-color: #583e26;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 12px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::first-letter {
+  text-transform: uppercase;
+}
+
+.btn:is(:hover, :focus) {
+  color: black;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-list li:nth-child(1) .btn:is(:hover, :focus) {
+  background-color: darkolivegreen;
+}
+
+.btn-list li:nth-child(2) .btn:is(:hover, :focus) {
+  background-color: white;
+}
+
+.btn-list li:nth-child(3) .btn:is(:hover, :focus) {
+  background-color: firebrick;
+}
