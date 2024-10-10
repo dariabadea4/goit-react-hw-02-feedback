@@ -14,7 +14,7 @@
   color: white;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 12px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 10px 12px rgba(0, 0, 0, 0.3);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -25,7 +25,7 @@
 
 .btn:is(:hover, :focus) {
   color: black;
-  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn-list li:nth-child(1) .btn:is(:hover, :focus) {
